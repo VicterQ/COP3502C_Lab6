@@ -7,13 +7,13 @@ def encode(string):
         if x > 9:  # we take the ones digit
             x %= 10
         encoded_string.append(str(x))  # add x to the list
-    encoded_pass = ''.join(encoded_string)  # joinds the list into a string
-    return encoded_pass
+    encoded_password = ''.join(encoded_string)  # joinds the list into a string
+    return encoded_password
 
 
-def decode():
+def decode(decoded_password):
     pass
-    return decoded_pass
+    return decoded_password
 
 
 if __name__ == '__main__':
@@ -27,9 +27,9 @@ if __name__ == '__main__':
         if option == 1:
             password = input('Please enter your password to encode: ')
             print('Your password has been encoded and stored!')
-			encoded_password = encode(password)
+		    encoded_password = encode(password)
         elif option == 2:
-			decoded_passwor = decode((encoded_password)
-            print(f'The encoded password is {encode_password}, and the original password is {decoded_password}.')
+			decoded_passwor = decode(encoded_password)
+            print(f'The encoded password is {encoded_password}, and the original password is {decoded_password}.')
         else:
             break
