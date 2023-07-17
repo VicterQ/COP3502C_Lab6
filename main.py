@@ -29,7 +29,7 @@ if __name__ == '__main__':
             print('Your password has been encoded and stored!')
 			encoded_password = encode(password)
         elif option == 2:
-			decoded_passwor = decode(password)
+			decoded_passwor = decode((encoded_password)
             print(f'The encoded password is {encode_password}, and the original password is {decoded_password}.')
         else:
             break
